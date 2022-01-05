@@ -1,7 +1,10 @@
 #page-home{
 
     .logo{
-     position: absolute;
+        position: absolute;
+        left: 90px;
+        top: 41px;
+     
     }
     .social{
         position: absolute;
@@ -12,25 +15,35 @@
         top: 52px;
     }
 
+    main{
+        
+        padding: 200px 90px;
+    
     strong{
-        display: block;
-        font-size: 20px;
+        font-size: 24px;
+        line-height: 32px;
     }
     
     h1{
-        position: static;
         font-size: 68px;
-        font-family: 'Poppins', sans-serif;
-        color:#F9F9F9;
-        width: 445px;
-        height: 148px;
-        left: 0px;
-        top: 44px;
+        width: 400px;
+        line-height: 74px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+
+    p{
+        width: 400px;
+    }
+   
+}
 
     .chihiro{
         position: absolute;
-        left: auto;
-        top: auto;
+        display: flex;
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+        left: 1178px;
+        top: 52px;
     }
  }
