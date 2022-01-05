@@ -34,10 +34,55 @@
 
     p{
         width: 400px;
+        margin-bottom: 50px;
     }
    
 }
 
+.botoes{
+
+    display: flex;
+    transition-duration: 0.4s;
+
+    .botao-agora{
+        background-color: #658E76;
+        border: none;
+        color: #F9F9F9;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin: 20px 10px;
+        cursor: pointer;
+        
+    }
+
+    button img{
+        padding-right: 0.5rem;
+    }
+    .botao-trailer{
+        background: none;
+        border: 2px solid #658E76;
+        color: #F9F9F9;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin: 20px 10px;
+        cursor: pointer;
+        
+    }
+    .botao-trailer:hover{
+        background-color: #658E76;
+      }
+    
+    .botao-agora:hover{
+        background: none;
+        border: 2px solid #658E76;
+      }
+}
     .chihiro{
         position: absolute;
         display: flex;

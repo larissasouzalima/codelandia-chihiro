@@ -4,6 +4,7 @@ import instagram from '../assets/images/instagram.svg'
 import twitter from '../assets/images/twitter.svg'
 import youtube from '../assets/images/youtube.svg'
 import chihiro from '../assets/images/chihiro.svg'
+import play from '../assets/images/play.svg'
 import '../styles/home.scss';
 
 export function Home(){
@@ -22,8 +23,10 @@ export function Home(){
                 <strong>HAYAO MIYAZAKI</strong>
                 <h1>A VIAGEM DE CHIHIRO</h1>
                 <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
-                <button>Assistir Agora</button>
-                <button>Assista o trailer</button>
+                <div className="botoes">
+                <button className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
+                <button className="botao-trailer">ASSISTA O TRAILER</button>
+                </div>
                 <img src={chihiro} alt="chihiro" className="chihiro"/>
             </main>
         </div>
