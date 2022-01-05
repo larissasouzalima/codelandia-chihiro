@@ -15,6 +15,15 @@
         gap: 24px;
         right: 110px;
         top: 41px;
+        
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            border: 2px solid #658E76;
+        }
     }
 
     main{

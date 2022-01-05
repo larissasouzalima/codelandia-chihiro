@@ -13,10 +13,10 @@ export function Home(){
             <header>
                 <img src={logo} alt="logo" className="logo"/>
                 <div className="social">
-                    <img src={facebook} alt="facebook"/>
-                    <img src={instagram} alt="instagram"/>
-                    <img src={twitter} alt="twitter"/>
-                    <img src={youtube} alt="youtube"/>
+                    <button><img src={facebook} alt="facebook"/></button>
+                    <button><img src={instagram} alt="instagram"/></button>
+                    <button><img src={twitter} alt="twitter"/></button>
+                    <button><img src={youtube} alt="youtube"/></button>
                 </div>
             </header>
             <main>
