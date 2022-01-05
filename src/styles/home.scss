@@ -1,0 +1,36 @@
+#page-home{
+
+    .logo{
+     position: absolute;
+    }
+    .social{
+        position: absolute;
+        display: flex;
+        grid-gap: 2.5rem;
+        gap: 2.5rem;
+        left: 1178px;
+        top: 52px;
+    }
+
+    strong{
+        display: block;
+        font-size: 20px;
+    }
+    
+    h1{
+        position: static;
+        font-size: 68px;
+        font-family: 'Poppins', sans-serif;
+        color:#F9F9F9;
+        width: 445px;
+        height: 148px;
+        left: 0px;
+        top: 44px;
+    }
+
+    .chihiro{
+        position: absolute;
+        left: auto;
+        top: auto;
+    }
+ }
