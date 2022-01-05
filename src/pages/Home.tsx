@@ -24,8 +24,8 @@ export function Home(){
                 <h1>A VIAGEM DE CHIHIRO</h1>
                 <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
                 <div className="botoes">
-                <button className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
-                <button className="botao-trailer">ASSISTA O TRAILER</button>
+                <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.netflix.com/br/','_blank');}} className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
+                <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.youtube.com/watch?v=ByXuk9QqQkk','_blank');}}className="botao-trailer">ASSISTA O TRAILER</button>
                 </div>
             </main>
             <div className="content-ilustra">
