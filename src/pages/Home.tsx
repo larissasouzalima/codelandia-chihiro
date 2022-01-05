@@ -27,8 +27,10 @@ export function Home(){
                 <button className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
                 <button className="botao-trailer">ASSISTA O TRAILER</button>
                 </div>
-                <img src={chihiro} alt="chihiro" className="chihiro"/>
             </main>
+            <div className="content-ilustra">
+                <img src={chihiro} alt="chihiro" className="chihiro"/>
+            </div>
         </div>
     );
 }

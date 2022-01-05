@@ -1,4 +1,7 @@
 #page-home{
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
 
     .logo{
         position: absolute;
@@ -9,15 +12,14 @@
     .social{
         position: absolute;
         display: flex;
-        grid-gap: 2.5rem;
-        gap: 2.5rem;
-        left: 1178px;
-        top: 52px;
+        gap: 24px;
+        right: 110px;
+        top: 41px;
     }
 
     main{
         
-        padding: 200px 90px;
+        padding: 200px 100px;
     
     strong{
         font-size: 24px;
@@ -82,13 +84,26 @@
         background: none;
         border: 2px solid #658E76;
       }
-}
-    .chihiro{
-        position: absolute;
-        display: flex;
-        grid-gap: 2.5rem;
-        gap: 2.5rem;
-        left: 1178px;
-        top: 52px;
     }
- }
+    .content-ilustra{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        align-self: center;
+        animation-name: chihiro;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes chihiro {
+        from {
+            margin-top: 0%;
+            width: 300%
+          }
+        
+          to {
+            margin-bottom: 20%;
+            width: 100%;
+          }
+    }
+}
