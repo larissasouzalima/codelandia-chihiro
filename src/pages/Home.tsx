@@ -3,7 +3,7 @@ import facebook from '../assets/images/facebook.svg'
 import instagram from '../assets/images/instagram.svg'
 import twitter from '../assets/images/twitter.svg'
 import youtube from '../assets/images/youtube.svg'
-import chihiro from '../assets/images/chihiro.svg'
+import ilustracao from '../assets/images/ilustracao.png'
 import play from '../assets/images/play.svg'
 import '../styles/home.scss';
 
@@ -31,7 +31,7 @@ export function Home(){
                 </div>
             </main>
             <div className="content-ilustra">
-                <img src={chihiro} alt="chihiro" className="chihiro"/>
+                <img src={ilustracao} alt="ilustracao" className="ilustracao"/>
             </div>
         </div>
     );

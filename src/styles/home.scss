@@ -4,17 +4,17 @@
 
     .logo{
         position: absolute;
-        left: 100px;
-        top: 41px;
+        left: 6.25rem;
+        top: 2.5rem;
         width: 10rem;
      
     }
     .social > a{
         position: absolute;
         display: flex;
-        gap: 24px;
-        right: 110px;
-        top: 41px;
+        gap: 1.5rem;
+        right: 20rem;
+        top: 4rem;
     }
 
     span img:hover{
@@ -23,77 +23,89 @@
 
     main{
 
-        padding: 200px 100px;
+        padding: 12.5rem 6.25rem;
     
     strong{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
     
     h1{
-        font-size: 68px;
-        width: 400px;
-        line-height: 74px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 4.25rem;
+        width: 25rem;
+        line-height: 4.6rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
     }
 
     p{
-        width: 400px;
-        margin-bottom: 50px;
+        width: 25rem;
+        margin-bottom: 3rem;
     }
    
 }
 
-.botoes{
+    .botoes{
 
-    display: flex;
-
-    .botao-agora{
-        background-color: #658E76;
-        border: none;
-        color: #F9F9F9;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        margin: 20px 10px;
-        cursor: pointer;
-    }
 
-    button img{
-        padding-right: 0.5rem;
-    }
+        .botao-agora{
+            background-color: #658E76;
+            border: none;
+            color: #F9F9F9;
+            padding: 1rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            margin: 1.25rem 0.6rem;
+            cursor: pointer;
+        }
 
-    .botao-trailer{
-        background: none;
-        border: 2px solid #658E76;
-        color: #F9F9F9;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        font-size: 16px;
-        margin: 20px 10px;
-        cursor: pointer;
+        button img{
+            padding-right: 0.5rem;
+        }
+
+        .botao-trailer{
+            background: none;
+            border: 0.12rem solid #658E76;
+            color: #F9F9F9;
+            padding: 1rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 1rem;
+            margin: 1.25rem 0.6rem;
+            cursor: pointer;
+            
+        }
+        .botao-trailer:hover{
+            background-color: #658E76;
+            box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
+        }
         
-    }
-    .botao-trailer:hover{
-        background-color: #658E76;
-        box-shadow: 0 0 10px #658E76, 0 0 40px #658E76, 0 0 80px #658E76;
-      }
-    
-    .botao-agora:hover{
-        box-shadow: 0 0 10px #658E76, 0 0 40px #658E76, 0 0 80px #658E76;
-      }
+        .botao-agora:hover{
+            box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
+        }
     }
     .content-ilustra{
         display: flex;
         flex-direction: column;
-        max-width: fit-content;
+        width: 500px;
         align-self: center;
+        animation-name: ilustracao;
+       
+    }
+
+    @keyframes ilustracao {
+        from {
+            margin-top: 0%;          
+          }
+        
+          to {
+            margin-bottom: 10%;         
+          }        
     }
 }
