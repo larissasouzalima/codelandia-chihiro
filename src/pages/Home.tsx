@@ -13,10 +13,12 @@ export function Home(){
             <header>
                 <img src={logo} alt="logo" className="logo"/>
                 <div className="social">
-                    <button><img src={facebook} alt="facebook"/></button>
-                    <button><img src={instagram} alt="instagram"/></button>
-                    <button><img src={twitter} alt="twitter"/></button>
-                    <button><img src={youtube} alt="youtube"/></button>
+                    <a href='#'>
+                        <span><img src={facebook} alt="facebook"/></span>
+                        <span><img src={instagram} alt="instagram"/></span>
+                        <span><img src={twitter} alt="twitter"/></span>
+                        <span><img src={youtube} alt="youtube"/></span>
+                    </a>
                 </div>
             </header>
             <main>
@@ -24,8 +26,8 @@ export function Home(){
                 <h1>A VIAGEM DE CHIHIRO</h1>
                 <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
                 <div className="botoes">
-                <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.netflix.com/br/','_blank');}} className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
-                <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.youtube.com/watch?v=ByXuk9QqQkk','_blank');}}className="botao-trailer">ASSISTA O TRAILER</button>
+                    <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.netflix.com/br/','_blank');}} className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
+                    <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.youtube.com/watch?v=ByXuk9QqQkk','_blank');}}className="botao-trailer">ASSISTA O TRAILER</button>
                 </div>
             </main>
             <div className="content-ilustra">

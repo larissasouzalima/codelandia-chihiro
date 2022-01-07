@@ -1,33 +1,28 @@
 #page-home{
     display: flex;
-    align-items: stretch;
     height: 100vh;
 
     .logo{
         position: absolute;
-        left: 90px;
+        left: 100px;
         top: 41px;
+        width: 10rem;
      
     }
-    .social{
+    .social > a{
         position: absolute;
         display: flex;
         gap: 24px;
         right: 110px;
         top: 41px;
-        
-        button{
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover{
-            border: 2px solid #658E76;
-        }
+    }
+
+    span img:hover{
+        width: 2rem;
     }
 
     main{
-        
+
         padding: 200px 100px;
     
     strong{
@@ -53,7 +48,6 @@
 .botoes{
 
     display: flex;
-    transition-duration: 0.4s;
 
     .botao-agora{
         background-color: #658E76;
@@ -63,15 +57,17 @@
         text-align: center;
         text-decoration: none;
         display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 16px;
         margin: 20px 10px;
         cursor: pointer;
-        
     }
 
     button img{
         padding-right: 0.5rem;
     }
+
     .botao-trailer{
         background: none;
         border: 2px solid #658E76;
@@ -87,11 +83,11 @@
     }
     .botao-trailer:hover{
         background-color: #658E76;
+        box-shadow: 0 0 10px #658E76, 0 0 40px #658E76, 0 0 80px #658E76;
       }
     
     .botao-agora:hover{
-        background: none;
-        border: 2px solid #658E76;
+        box-shadow: 0 0 10px #658E76, 0 0 40px #658E76, 0 0 80px #658E76;
       }
     }
     .content-ilustra{
@@ -99,20 +95,5 @@
         flex-direction: column;
         max-width: fit-content;
         align-self: center;
-        animation-name: chihiro;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-
-    }
-    @keyframes chihiro {
-        from {
-            margin-top: 0%;
-            width: 300%
-          }
-        
-          to {
-            margin-bottom: 20%;
-            width: 100%;
-          }
     }
 }
