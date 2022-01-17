@@ -1,3 +1,7 @@
+.principal{
+    display: flex;
+    justify-content: space-between;
+}
 .cabecalho{
     display: flex;
     flex-wrap: wrap;
@@ -85,18 +89,14 @@ aside{
     }
 }
 
-    .content-ilustra{
-        display: flex;
-        flex-direction: column;
+    .ilustracao{  
         width: 500px;
         align-self: center;
         animation-name: ilustracao;
         animation-duration: 4s;
-        //animation-iteration-count: infinite;  
+        animation-iteration-count: infinite;  
     }
 
-
-/*
 
 @keyframes ilustracao {
     from {
@@ -106,4 +106,4 @@ aside{
       to {
         margin-bottom: 10%;         
       }        
-}*/
+}

@@ -21,6 +21,7 @@ export function Home(){
                     </a>
                 </div>
             </header>
+            <div className="principal">
             <aside>
                 <strong>HAYAO MIYAZAKI</strong>
                 <h1>A VIAGEM DE CHIHIRO</h1>
@@ -30,9 +31,8 @@ export function Home(){
                     <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.youtube.com/watch?v=ByXuk9QqQkk','_blank');}}className="botao-trailer">ASSISTA O TRAILER</button>
                 </div>
             </aside>
-            <div className="content-ilustra">
                 <img src={ilustracao} alt="ilustracao" className="ilustracao"/>
-            </div>
+        </div>
         </>
     );
 }
