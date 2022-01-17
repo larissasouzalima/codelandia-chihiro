@@ -1,30 +1,25 @@
-#page-home{
+.cabecalho{
     display: flex;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;      
+}
 
-    .logo{
-        position: absolute;
-        left: 6.25rem;
-        top: 2.5rem;
-        width: 10rem;
-     
-    }
-    .social > a{
-        position: absolute;
-        display: flex;
-        gap: 1.5rem;
-        right: 20rem;
-        top: 4rem;
-    }
+.logo{
+    width: 10rem;
+}
 
-    span img:hover{
-        width: 2rem;
-    }
+.social > a{
+    display: flex;
+    gap: 2rem;
+}
 
-    main{
+span img:hover{
+    width: 2rem;
+}
 
-        padding: 12.5rem 6.25rem;
-    
+aside{
+    padding: 12.5rem 6.25rem;
+
     strong{
         font-size: 1.5rem;
         line-height: 2rem;
@@ -42,70 +37,73 @@
         width: 25rem;
         margin-bottom: 3rem;
     }
-   
+
 }
 
-    .botoes{
+.botoes{
+    display: flex;
 
+    .botao-agora{
+        background-color: #658E76;
+        border: none;
+        color: #F9F9F9;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-decoration: none;
         display: flex;
-
-        .botao-agora{
-            background-color: #658E76;
-            border: none;
-            color: #F9F9F9;
-            padding: 1rem 2rem;
-            text-align: center;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            margin: 1.25rem 0.6rem;
-            cursor: pointer;
-        }
-
-        button img{
-            padding-right: 0.5rem;
-        }
-
-        .botao-trailer{
-            background: none;
-            border: 0.12rem solid #658E76;
-            color: #F9F9F9;
-            padding: 1rem 2rem;
-            text-align: center;
-            text-decoration: none;
-            display: flex;
-            font-size: 1rem;
-            margin: 1.25rem 0.6rem;
-            cursor: pointer;
-            
-        }
-        .botao-trailer:hover{
-            background-color: #658E76;
-            box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
-        }
-        
-        .botao-agora:hover{
-            box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
-        }
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        margin: 1.25rem 0.6rem;
+        cursor: pointer;
     }
+
+    button img{
+        padding-right: 0.5rem;
+    }
+
+    .botao-trailer{
+        background: none;
+        border: 0.12rem solid #658E76;
+        color: #F9F9F9;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 1rem;
+        margin: 1.25rem 0.6rem;
+        cursor: pointer;
+        
+    }
+    .botao-trailer:hover{
+        background-color: #658E76;
+        box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
+    }
+    
+    .botao-agora:hover{
+        box-shadow: 0 0 0.625rem #658E76, 0 0 2.5rem #658E76, 0 0 5rem #658E76;
+    }
+}
+
     .content-ilustra{
         display: flex;
         flex-direction: column;
         width: 500px;
         align-self: center;
         animation-name: ilustracao;
-       
+        animation-duration: 4s;
+        //animation-iteration-count: infinite;  
     }
 
-    @keyframes ilustracao {
-        from {
-            margin-top: 0%;          
-          }
-        
-          to {
-            margin-bottom: 10%;         
-          }        
-    }
-}
+
+/*
+
+@keyframes ilustracao {
+    from {
+        margin-top: 0%;          
+      }
+    
+      to {
+        margin-bottom: 10%;         
+      }        
+}*/
