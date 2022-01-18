@@ -1,11 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
 body{
     background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    min-height: 100vh;
+    margin: 0;
 }
 
 body, textarea{

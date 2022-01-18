@@ -1,17 +1,18 @@
 .principal{
     display: flex;
     justify-content: space-between;
+    width: 1500px; 
 }
 .cabecalho{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;      
+    justify-content: space-between;  
 }
 
 .logo{
     width: 10rem;
     margin-top: 6rem;
-    margin-left: 6rem;
+    margin-left: 8rem;
 }
 
 .social > a{
@@ -19,7 +20,6 @@
     gap: 2rem;
     margin-top: 8rem;
     margin-right: 6rem;
-
 }
 
 span img:hover{
@@ -27,7 +27,7 @@ span img:hover{
 }
 
 aside{
-    padding: 12.5rem 6.25rem;
+    padding: 8rem 8rem;
 
     strong{
         font-size: 1.5rem;
@@ -112,3 +112,23 @@ aside{
         margin-bottom: 10%;         
       }        
 }
+
+//Medias query
+
+@media (min-width: 2000px){
+
+    .principal{
+        //width: 1000px; 
+    }
+
+    .cabecalho{
+        margin-right: 800px;
+    }
+    aside > p{
+        color:aqua;
+    }
+    aside{
+        margin-left: 400px;
+    }
+}
+
