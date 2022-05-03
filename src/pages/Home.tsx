@@ -9,8 +9,8 @@ import '../styles/home.scss';
 
 export function Home(){
     return(
-        <div id="page-home">
-            <header>
+        <>
+            <header className="cabecalho">
                 <img src={logo} alt="logo" className="logo"/>
                 <div className="social">
                     <a href='#'>
@@ -21,7 +21,8 @@ export function Home(){
                     </a>
                 </div>
             </header>
-            <main>
+            <div className="principal">
+            <aside>
                 <strong>HAYAO MIYAZAKI</strong>
                 <h1>A VIAGEM DE CHIHIRO</h1>
                 <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
@@ -29,11 +30,10 @@ export function Home(){
                     <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.netflix.com/br/','_blank');}} className="botao-agora"><img src={play} alt="play"/>ASSISTIR AGORA</button>
                     <button type="button" onClick={(e) => {e.preventDefault();window.open('https://www.youtube.com/watch?v=ByXuk9QqQkk','_blank');}}className="botao-trailer">ASSISTA O TRAILER</button>
                 </div>
-            </main>
-            <div className="content-ilustra">
+            </aside>
                 <img src={ilustracao} alt="ilustracao" className="ilustracao"/>
-            </div>
         </div>
+        </>
     );
 }
 
